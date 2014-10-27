@@ -5,7 +5,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp({
 
 fingerprint: {
-    prepend: 'https://cdn.example.net/summit360-web/'
+    prepend: 'https://d1pbpbaxvvtzsb.cloudfront.net/summit360web/'
   },
   minifyCSS: {
     enabled: true,
