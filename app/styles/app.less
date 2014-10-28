@@ -1,4 +1,15 @@
-html, body {
-  margin: 20px;
-  background: #eee;
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300|Exo+2:600,300);
+
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import 'bootstrap_variables';
+@import 'layout';
+@import 'header';
+@import 'footer';
+
+@import 'home';
+
+//Required to make this design work!
+.ember-view {
+  height:100%;
 }

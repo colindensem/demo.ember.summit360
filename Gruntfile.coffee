@@ -12,6 +12,7 @@ module.exports = (grunt) ->
         replacements: [
           from: 'cloudfront.net/summit360web/assets'
           to: "cloudfront.net/#{gitSha}/assets"
+#          to: "cloudfront.net/#{gitSha}/assets"
         ]
 
     s3:
@@ -38,6 +39,7 @@ module.exports = (grunt) ->
         host: '<%= env.REDIS.production.host %>'
         port: '<%= env.REDIS.production.port %>'
         connectionOptions: auth_pass: '<%= env.REDIS.production.password %>'
+
 
       canary:
         options:
@@ -80,11 +82,11 @@ module.exports = (grunt) ->
   #This task performs the default build and release.
   grunt.registerTask 'publish', ['default', 'release']
 
-
+  #By DEFAULT, Grunt will do a canary release.
   #Get the Git info x
   #Build x
   #Replace -? Replace will cache bust and same build stamps!
   #Upload to S3 x
-  #Push to Redis
-  #Tidy up.
+  #Push to Redis x
+  #Tidy up. TODO
   grunt.registerTask 'default', ["gitinfo", "shell:prod", "s3:prod", "canary"]

@@ -19,3 +19,5 @@ testem.log
 #Config
 .env.json
 .env*
+
+.idea/*
