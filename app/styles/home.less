@@ -60,7 +60,7 @@
 /* ********* */
 .hero .feature-box {
   position: absolute;
-  bottom: 30px;
+  bottom: 5px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -119,8 +119,11 @@
 
 #hero {
   padding-top: 50px;
-  background: url('/assets/home.jpg') no-repeat center center fixed;
-  display: table;
+  background: url('/assets/home.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  overflow: auto;
+//  display: table;
   height: 100%;
   position: relative;
   width: 100%;

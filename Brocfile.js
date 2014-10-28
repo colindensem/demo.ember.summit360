@@ -14,6 +14,10 @@ fingerprint: {
 
 });
 
+var index = app.legacyFilesToAppend.indexOf('bower_components/handlebars/handlebars.runtime.js');
+if(index) {
+  app.legacyFilesToAppend[index] = 'bower_components/handlebars/handlebars.js';
+}
 
 
 // Use `app.import` to add additional libraries to the generated
