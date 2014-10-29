@@ -8,7 +8,6 @@ Router = Ember.Router.extend
 
 Router.map ->
   @route "about"
-
-  @route '/'
+  @route '/', queryParams: ['anchor']
 
 `export default Router;`
