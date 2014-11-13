@@ -1,5 +1,7 @@
 `import Ember from 'ember'`
 
+#http://stackoverflow.com/questions/18445661/ember-js-anchor-link
+
 AnchorScrollMixin = Ember.Mixin.create(
 
   actions: {
